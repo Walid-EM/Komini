@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    height: 400vh;
+    width: 100%;
 }
 /* header*/
 header{
@@ -60,13 +60,12 @@ header{
     align-items: center;
     justify-content: center;
     height: 27px;
-    width: 35px;
+    width: 30px;
     background-color: #b15124f3;
     box-shadow: 0 0 2px 0 black;
     border-radius: 10px;
     margin: 2px;
     color: #fff;
-
 }
 .menu-icon{
     display: none;
@@ -94,15 +93,14 @@ header{
             padding-top: 22px;
         }
     }
-
 /* top-page */
 .top-page{
-    border-bottom: 2px solid #5a240b ;
-    height: 700px;
+    height: auto;
     display: flex;
     align-items: center;
 }
 .top-page-title{
+    margin-top: 90px;
     margin-left: 10%;
     color: #212121;
     font-size: 50px;
@@ -114,6 +112,12 @@ header{
     color: #b15124f3;
     z-index: 1;
 }
+@media (max-width: 650px){
+    .top-page-title{
+        top: 100px;
+        font-size: 35px;
+    }
+}
 .top-page-background{
     position: absolute;
     left: 50%;
@@ -121,17 +125,38 @@ header{
     width: 45%;
     min-width: 585px;
 }
+@media (max-width:1325px) {
+    .top-page-background{
+        left: 650px;
+    }
+}
 /**** body ****/
+/* container-media */
+.container-media{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 17%;
+    align-items: center;
+    width: 90%;
+}
+.btn{
+    height: 30px;
+}
+.btn svg{
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+}
 /*first-media*/
 .first-media {
     display: grid;
     grid-auto-flow: column;
     height: auto;
-    width: 90%;
-    margin: 0 5%;
     padding: 20px 0;
     border: #3e1908;
-    
+    overflow-x: scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 /* media-element */
 .media-element{
