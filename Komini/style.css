@@ -1,0 +1,144 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 400vh;
+}
+/* header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+.scroll-down header{
+    border-bottom: 2px solid #3e1908;
+}
+.scroll-up header{
+    border-bottom: 2px solid #3e1908;
+}
+.logo{
+    color: #3e1908;
+    font-size: 35px;
+    font-weight: 800;
+    padding-left: 5%;
+}
+.navList{
+    display: flex;
+}
+.navList>li{
+    padding: 10px;
+}  
+.navList a{
+    color: #3e1908;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 0 22px;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+.navList a:hover{
+    color: #5a240b;
+    border-bottom: 2px solid #5a240b;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+.icons i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: 35px;
+    background-color: #b15124f3;
+    box-shadow: 0 0 2px 0 black;
+    border-radius: 10px;
+    margin: 2px;
+    color: #fff;
+
+}
+.menu-icon{
+    display: none;
+    align-items: center;
+    width: auto;
+}
+.menu-icon img{
+    height: 40px;
+    width: 40px;
+}
+    @media (max-width: 1050px) {
+        .icons{
+            justify-content: end;
+            padding-right: 0;
+            width: 80%;
+        }
+        .menu-icon{
+            margin-left: 5%;
+            display: flex;
+        }
+        .navList{
+            display: none;
+        }
+        header{
+            padding-top: 22px;
+        }
+    }
+
+/* top-page */
+.top-page{
+    border-bottom: 2px solid #5a240b ;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.top-page-title{
+    margin-left: 10%;
+    color: #212121;
+    font-size: 50px;
+    font-weight: 700;
+    z-index: 1;
+}
+.top-page-title span{
+    font-size: larger;
+    color: #b15124f3;
+    z-index: 1;
+}
+.top-page-background{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 45%;
+    min-width: 585px;
+}
+/**** body ****/
+/*first-media*/
+.first-media {
+    display: grid;
+    grid-auto-flow: column;
+    height: auto;
+    width: 90%;
+    margin: 0 5%;
+    padding: 20px 0;
+    border: #3e1908;
+    
+}
+/* media-element */
+.media-element{
+    width: 200px;
+    height: 250px;
+    border-radius: 50px;
+    border: 1px solid rgb(62, 25, 8, 0.4);
+    margin: 0 15px;
+}
+
